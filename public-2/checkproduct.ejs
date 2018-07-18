@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Checkout | E-Shopper</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<link href="assets/css/price-range.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script src="assets/js/main.js"></script>
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+	<link rel="shortcut icon" href="assets/images//ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images//ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images//ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images//ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/images//ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
+
+<body>
+
+	<header id="header">
+		<!--header-->
+
+
+		<div class="header-middle">
+			<!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html">
+								<img src="assets/images/rm-logo-4.gif" style="height: 50px;" alt="" />
+							</a>
+						</div>
+						<div class="btn-group pull-right">
+
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+
+								<li>
+									<a href="">
+										<i class="fa fa-star"></i> Wishlist</a>
+								</li>
+								<li>
+									<a href="products.html" class="active">
+										<i class="fa fa-crosshairs"></i> Checkout</a>
+								</li>
+								<li>
+									<a href="cart.html">
+										<i class="fa fa-shopping-cart"></i> Cart</a>
+								</li>
+								<li>
+									<a href="loginandsignup.html">
+										<i class="fa fa-lock"></i> Login & SignUp</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-middle-->
+
+		<div class="header-bottom">
+			<!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li>
+									<a href="home.html">Home</a>
+								</li>
+								<li class="dropdown">
+									<a href="#">Shop
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul role="menu" class="sub-menu">
+										<li>
+											<a href="shop.html">Products</a>
+										</li>
+										<li>
+											<a href="products.html">Product Details</a>
+										</li>
+										<li>
+											<a href="checkproduct.html">Checkout</a>
+										</li>
+										<li>
+											<a href="feedback.html">Feedback</a>
+										</li>
+									</ul>
+								</li>
+
+								<ul role="menu" class="sub-menu">
+
+								</ul>
+
+								<li>
+									<a href="image_upload.html">Upload your own dress</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-bottom-->
+	</header>
+	<!--/header-->
+
+	<section id="cart_items">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li class="active">Check out</li>
+				</ol>
+			</div>
+			<!--/breadcrums-->
+
+
+
+			<div class="shopper-informations">
+				<form action="/checkout" method="POST">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="shopper-info">
+								<p>Shopper Information</p>
+								<div class="form-group">
+									<input class="form-control" type="hidden" name="id" value="<%= id %>">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="hidden" name="size" value="<%= size %>">
+
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Full Name" name="fname">
+
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Phone Number" name="contact">
+
+								</div>
+
+
+							</div>
+						</div>
+						<div class="col-sm-6 clearfix">
+							<div class="bill-to">
+								<p>Bill To</p>
+								<div class="">
+
+									<div class="form-group">
+										<input class="form-control" type="text" placeholder="Address" name="address">
+									</div>
+
+									<div class="form-group">
+										<textarea class="form-control" name="description"></textarea>
+									</div>
+									<button class="btn btn-success" type="submit">Checkout</button>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+			<div class="review-payment">
+				<h2>Review & Payment</h2>
+			</div>
+
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Item</td>
+							<td class="description"></td>
+							<td class="price">Price</td>
+							<td class="quantity">Quantity</td>
+							<td class="total">Total</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="cart_product">
+								<a href="">
+									<img src="assets/<%= data.img %>" alt="" style="width: 200px;">
+								</a>
+							</td>
+							<td class="cart_description">
+								<h4>
+									<a href="">
+										<%= data.title %>
+									</a>
+								</h4>
+								<p>Web ID:
+									<%= data.id %>
+								</p>
+							</td>
+							<td class="cart_price">
+								<p>
+									<%= data.price %>
+								</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href="">
+									<i class="fa fa-times"></i>
+								</a>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="4">&nbsp;</td>
+							<td colspan="2">
+								<table class="table table-condensed total-result">
+									<tr>
+										<td>Cart Sub Total</td>
+										<td>
+											<%= data.price %>
+										</td>
+									</tr>
+
+									<tr class="shipping-cost">
+										<td>Shipping Cost</td>
+										<td>Free</td>
+									</tr>
+									<tr>
+										<td>Total</td>
+										<td>
+											<span>
+												<%= data.price %>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</section>
+	<!--/#cart_items-->
+
+
+
+	<footer id="footer">
+		<!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2>
+								RENT AWAY</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="assets/images//home/iframe1.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="assets/images//home/iframe2.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="assets/images//home/iframe3.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="assets/images//home/iframe4.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="assets/images//home/map.png" alt="" />
+							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Online Help</a>
+								</li>
+								<li>
+									<a href="">Contact Us</a>
+								</li>
+								<li>
+									<a href="">Order Status</a>
+								</li>
+								<li>
+									<a href="">Change Location</a>
+								</li>
+								<li>
+									<a href="">FAQ’s</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">T-Shirt</a>
+								</li>
+								<li>
+									<a href="">Mens</a>
+								</li>
+								<li>
+									<a href="">Womens</a>
+								</li>
+								<li>
+									<a href="">Gift Cards</a>
+								</li>
+								<li>
+									<a href="">Shoes</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Terms of Use</a>
+								</li>
+								<li>
+									<a href="">Privecy Policy</a>
+								</li>
+								<li>
+									<a href="">Refund Policy</a>
+								</li>
+								<li>
+									<a href="">Billing System</a>
+								</li>
+								<li>
+									<a href="">Ticket System</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Company Information</a>
+								</li>
+								<li>
+									<a href="">Careers</a>
+								</li>
+								<li>
+									<a href="">Store Location</a>
+								</li>
+								<li>
+									<a href="">Affillate Program</a>
+								</li>
+								<li>
+									<a href="">Copyright</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default">
+									<i class="fa fa-arrow-circle-o-right"></i>
+								</button>
+								<p>Get the most recent updates from
+									<br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by
+						<span>
+							<a target="_blank" href="http://www.themeum.com">Themeum</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!--/Footer-->
+
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBIaXhQUE5n807-HjgCOira_GgRLrmz1h0",
+			authDomain: "e-shopping-1995e.firebaseapp.com",
+			databaseURL: "https://e-shopping-1995e.firebaseio.com",
+			projectId: "e-shopping-1995e",
+			storageBucket: "e-shopping-1995e.appspot.com",
+			messagingSenderId: "201233628689"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="assets/js/app.js"></script>
+
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.scrollUp.min.js"></script>
+	<script src="assets/js/price-range.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Home | RENTMINE</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/price-range.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+	<link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
+
+
+<body >
+	
+		<style>
+				.productinfo img{
+					width:200px;
+					height: auto;
+					max-height: 250px;
+				}
+				</style>
+	<header id="header">
+		<!--header-->
+		<div class="header_top">
+			<!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i> +2 95 01 88 821</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope"></i> info@domain.com</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header_top-->
+
+		<div class="header-middle">
+			<!--header-middle-->
+			<div class="container" >
+				<div class="row" >
+					<div class="col-sm-4">
+						<div class="logo pull-left"  >
+							<a href="/">
+								<img src="images/rm-logo-4.gif" 
+								style="height: 50px;" />
+							</a>
+						</div>
+
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#" id="userid">
+										<i class="fa fa-user"></i>
+										<% if(issigned){ %> 
+												<%= email %>
+										<% }else{ %>
+										
+										Accounts
+									<% } %>
+									</a>
+								</li>
+								<% if(issigned){ %>
+								<li>
+									<a href="/logout">
+										<i class="fa fa-lock"></i>LOGOUT</a>
+								</li>
+								<% } %>
+								<li>
+									<a href="checkout.html">
+										<i class="fa fa-crosshairs"></i> Checkout</a>
+								</li>
+								<li>
+									<a href="cart.html">
+										<i class="fa fa-shopping-cart"></i> Cart</a>
+								</li>
+								<% if(!issigned){ %>
+								<li id="myBtn">
+									<a href="#">
+										<i class="fa fa-lock"></i> Login & SignUp</a>
+								</li>
+								<% } %>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-middle-->
+
+		<div class="header-bottom">
+			<!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li>
+									<a href="/" class="active">Home</a>
+								</li>
+								<li class="dropdown">
+									<a href="#">Shop
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul role="menu" class="sub-menu">
+										<li>
+											<a href="shop.html">Products</a>
+										</li>
+										<li>
+											<a href="product-details.html">Product Details</a>
+										</li>
+										<li>
+											<a href="checkout.html">Checkout</a>
+										</li>
+										<li>
+											<a href="cart.html">Cart</a>
+										</li>
+										<li>
+											<a href="login.html">Login</a>
+										</li>
+
+									</ul>
+								</li>
+
+								<li>
+									<a href="#">Dresses</a>
+								</li>
+								<li>
+									<a href="#">Clothings</a>
+								</li>
+								<li>
+									<a href="#">Occasions</a>
+								</li>
+								<li>
+									<a href="404.html">404</a>
+								</li>
+								<li>
+									<a href="contact-us.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-bottom-->
+	</header>
+	<!--/header-->
+
+	<section class="" style="position: relative;">
+		<button style="position: absolute;top: 50px;left:50px;
+		border-radius: 10px;background: dodgerblue;color: wheat"><a href="shop.html" style="color: wheat">FEATURED CLOTHES</a>
+		</button>
+		<!--video-->
+		<video width="100%" id="video" autoplay loop>
+			<source src="images/cloth-2.mp4" type="video/mp4"> Your browser does not support the video tag.
+		</video>
+	</section>
+	<section>
+		<!-- /Im renting for-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top dress" src="images/dress-1.jpg" alt="Card image cap" style="width:100%;">
+						<div class="card-body">
+							<h5 class="card-title text-center">Wedding</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top dress" src="images/dress-2.jpg" alt="Card image cap" style="width:100%;">
+						<div class="card-body">
+							<h5 class="card-title text-center">Dressing</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top dress" src="images/dress-3.jpg" alt="Card image cap" style="width:100%;">
+						<div class="card-body">
+							<h5 class="card-title text-center">Black Tie</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top dress" src="images/dress-4.jpg" alt="Card image cap" style="width:100%;">
+						<div class="card-body">
+							<h5 class="card-title text-center">DayTime Event</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section>
+
+	</section>
+	<hr>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Category</h2>
+						<div class="panel-group category-products" id="accordian">
+							<!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#CASUAL">
+											<span class="badge pull-right">
+												<i class="fa fa-plus"></i>
+											</span>
+											CASUAL
+										</a>
+									</h4>
+								</div>
+								<div id="CASUAL" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li>
+												<a href="shop.html">MALE </a>
+											</li>
+											<li>
+												<a href="shop.html">FEMALE</a>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#formal">
+											<span class="badge pull-right">
+												<i class="fa fa-plus"></i>
+											</span>
+											FORMAL
+										</a>
+									</h4>
+								</div>
+								<div id="formal" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li>
+												<a href="shop.html">MALE</a>
+											</li>
+											<li>
+												<a href="shop.html">FEMALE</a>
+											</li>
+											
+											
+					
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#party">
+											<span class="badge pull-right">
+												<i class="fa fa-plus"></i>
+											</span>
+											PARTY WEAR
+										</a>
+									</h4>
+								</div>
+								<div id="party" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											
+											<li>
+												<a href="shop.html">MALE</a>
+											</li>
+											<li>
+												<a href="shop.html">FEMALE</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="shop.html">BRIDAL DRESSES</a>
+									</h4>
+								</div>
+							</div>
+							
+						</div>
+						<!--/category-products-->
+
+						
+
+					</div>
+				</div>
+
+				<div class="col-sm-9 padding-right">
+
+					<div class="features_items">
+						<!--features_items-->
+						<h2 class="title text-center">Features Items</h2>
+		   
+						<% for(var i=0 ; i<data.length ; i++){ %>
+								<div class="col-sm-4">
+										<div class="product-image-wrapper">
+											<div class="single-products">
+												<div class="productinfo text-center">
+													<img src=<%= data[i].img %> alt="" />
+													<h2><%= data[i].price %></h2>
+													<p><%= data[i].title %></p>
+													<a href="/product-details?id=<%= data[i].id %>" class="btn btn-default add-to-cart" 
+														<% if(!issigned){ %>
+																style="display:none"												
+													 <%	} %>
+													 	>
+														<i class="fa fa-shopping-cart"></i>Add to cart</a>
+												</div>
+												<!-- <div class="product-overlay">
+													<div class="overlay-content">
+														<h2><%= data[i].price %></h2>
+														<p><%= data[i].title %></p>
+														<a href="/product-details?id=<%= data[i].id %>" class="btn btn-default add-to-cart">
+															<i class="fa fa-shopping-cart"></i>Add to cart</a>
+													</div>
+												</div> -->
+											</div>
+											<div class="choose">
+												<ul class="nav nav-pills nav-justified">
+													<li>
+														<a href="#">
+															<i class="fa fa-plus-square"></i>Add to wishlist</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-plus-square"></i>Add to compare</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+						<%} %>
+
+					
+					</div>
+					<!--features_items-->
+
+					<div class="category-tab">
+						<!--category-tab-->
+						<div class="col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a href="#wedding" data-toggle="tab">Wedding</a>
+								</li>
+								<li>
+									<a href="#casual" data-toggle="tab">Casual</a>
+								</li>
+								<li>
+									<a href="#party" data-toggle="tab">Party</a>
+								</li>
+								<li>
+									<a href="#office-type" data-toggle="tab">Office Wear</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="wedding">
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/dress-1.jpg" alt="" id="cartmodal-btn"/>
+												<h2>2500 Rs</h2>
+												<button id="cart-btn"><p>red dress (w-44)</p></button>
+												<a href="#" class="btn btn-default add-to-cart" >
+													<i class="fa fa-shopping-cart" ></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/dress-2.jpg" alt="" />
+												<h2>2000 Rs</h2>
+												<p>Maroon dress (c-22)</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/dress-3.jpg" alt="" />
+												<h2>4000 Rs</h2>
+												<p>stylish red dress(c-33)</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/dress-4.jpg" alt="" />
+												<h2>2000 Rs</h2>
+												<p>Casual dress </p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="casual">
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="party">
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="office-type">
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					<!--/category-tab-->
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2>RENTMINE</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe1.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Dolmen Mall Event</p>
+								<h2>24 DEC 2017</h2>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe3.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Pakistan day event</p>
+								<h2>23 march 2018</h2>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="images/home/map.png" alt="" />
+							<p>FL-4/9, main near habitt, nipa, Rashid Minhas Rd Block 5 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="#">Online Help</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+								<li>
+									<a href="#">Order Status</a>
+								</li>
+								<li>
+									<a href="#">Change Location</a>
+								</li>
+								<li>
+									<a href="#">FAQ’s</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="#">T-Shirt</a>
+								</li>
+								<li>
+									<a href="#">Mens</a>
+								</li>
+								<li>
+									<a href="#">Womens</a>
+								</li>
+								<li>
+									<a href="#">Gift Cards</a>
+								</li>
+								<li>
+									<a href="#">Shoes</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="#">Terms of Use</a>
+								</li>
+								<li>
+									<a href="#">Privecy Policy</a>
+								</li>
+								<li>
+									<a href="#">Refund Policy</a>
+								</li>
+								<li>
+									<a href="#">Billing System</a>
+								</li>
+								<li>
+									<a href="#">Ticket System</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="#">Company Information</a>
+								</li>
+								<li>
+									<a href="#">Careers</a>
+								</li>
+								<li>
+									<a href="#">Store Location</a>
+								</li>
+								<li>
+									<a href="#">Affillate Program</a>
+								</li>
+								<li>
+									<a href="#">Copyright</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default">
+									<i class="fa fa-arrow-circle-o-right"></i>
+								</button>
+								<p>Get the most recent updates from
+									<br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by
+						<span>
+							<a target="_blank" href="http://www.themeum.com">Themeum</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!--/Footer-->
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" data-dismiss="modal">&times;</span>
+			<div class="container">
+				<h1 style="text-align: center;">Login/SignUp</h1>
+			</div>
+			<br>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<div class="form-body">
+							<ul class="nav nav-tabs final-login">
+								<li class="active">
+									<a data-toggle="tab" href="#sectionA">Sign In</a>
+								</li>
+								<li>
+									<a data-toggle="tab" href="#sectionB">SignUp</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div id="sectionA" class="tab-pane fade in active">
+									<div class="innter-form">
+										<form class="sa-innate-form" method="post" action="/signin">
+											<label>Email Address</label>
+											<input type="text" id="signin-email-text" name="email">
+											<label>Password</label>
+											<input type="password" id="signin-password-text" name="password">
+											<button type="submit" >Sign In</button>
+											<a href="">Forgot Password?</a>
+										</form>
+									</div>
+									<div class="social-login">
+										<p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
+										<ul>
+											<li>
+												<a href="">
+													<i class="fa fa-facebook"></i> Facebook</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fa fa-google-plus"></i> Google+</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fa fa-twitter"></i> Twitter</a>
+											</li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="sectionB" class="tab-pane fade">
+									<div class="innter-form">
+										<form class="sa-innate-form">
+											
+											<label>Email Address</label>
+											<input type="text" id="signup-email-text">
+											<label>Password</label>
+											<input type="password" id="signup-password-text">
+											<button type="button" onclick="signup()" >Join now</button>
+											<p>By clicking Join now, you agree to RentMine's <a href="#">User Agreement, Privacy Policy, and Cookie Policy</a>.</p>
+										</form>
+									</div>
+									<div class="social-login">
+										<p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+										<ul>
+											<li>
+												<a href="">
+													<i class="fa fa-facebook"></i> Facebook</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fa fa-google-plus"></i> Google+</a>
+											</li>
+											<li>
+												<a href="">
+													<i class="fa fa-twitter"></i> Twitter</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!--cart modal-->
+	
+		<!--cart modal-->
+
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

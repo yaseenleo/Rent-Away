@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Home | E-Shopper</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/prettyPhoto.css" rel="stylesheet">
+	<link href="assets/css/price-range.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
+
+<body>
+
+	<header id="header">
+		<!--header-->
+
+		<div class="header-middle">
+			<!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html">
+								<img src="assets/images/rm-logo-4.gif" style="height: 50px;" alt="" />
+							</a>
+						</div>
+						<div class="btn-group pull-right">
+
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+
+								<li>
+									<a href="#">
+										<i class="fa fa-star"></i> Wishlist</a>
+								</li>
+								<li>
+									<a href="products.html">
+										<i class="fa fa-crosshairs"></i> Checkout</a>
+								</li>
+								<li>
+									<a href="cart.html">
+										<i class="fa fa-shopping-cart"></i> Cart</a>
+								</li>
+								<li>
+									<a href="loginandsignup.html">
+										<i class="fa fa-lock"></i> Login & SignUp</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-middle-->
+
+		<div class="header-bottom">
+			<!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li>
+									<a href="home.html" class="active">Home</a>
+								</li>
+								<li class="dropdown">
+									<a href="#">Shop
+										<i class="fa fa-angle-down"></i>
+									</a>
+									<ul role="menu" class="sub-menu">
+										<li>
+											<a href="shop.html">Products</a>
+										</li>
+										<li>
+											<a href="products.html">Product Details</a>
+										</li>
+										<li>
+											<a href="checkproduct.html">Checkout</a>
+										</li>
+										<li>
+											<a href="feedback.html">Feedback</a>
+										</li>
+
+
+									</ul>
+								</li>
+
+
+								<li>
+									<a href="image_upload.html">Upload your own dress</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/header-bottom-->
+	</header>
+	<!--/header-->
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+			</div>
+			<div class="container">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2>Upload Your Image</h2>
+					</div>
+					<div class="panel-body">
+
+						<!-- Standar Form -->
+						<h4>Choose your file</h4>
+						<form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+							<div class="form-inline">
+								<div class="form-group">
+									<input type="file" value="upload" id="filebutton" onclick="move()">
+								</div>
+						</form>
+
+						<!-- Drop Zone -->
+						<h4>Review your file</h4>
+						</h4>
+						<div class="upload-drop-zone" id="drop-zone">
+							<img src="" alt="">
+						</div>
+
+						<!-- Progress Bar -->
+
+
+						<!-- Upload Finished -->
+
+						</div>
+					</div>
+				</div>
+				<!-- /container -->
+
+				<div class="recommended_items">
+
+					<!--recommended_items-->
+					<h2 class="title text-center">recommended items</h2>
+
+					<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="assets/images/home/recommend3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart">
+													<i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+				</div>
+				<!--/recommended_items-->
+
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+						</div>
+					</div>
+					<div class="col-sm-3">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Online Help</a>
+								</li>
+								<li>
+									<a href="">Contact Us</a>
+								</li>
+								<li>
+									<a href="">Order Status</a>
+								</li>
+								<li>
+									<a href="">Change Location</a>
+								</li>
+								<li>
+									<a href="">FAQ’s</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">T-Shirt</a>
+								</li>
+								<li>
+									<a href="">Mens</a>
+								</li>
+								<li>
+									<a href="">Womens</a>
+								</li>
+								<li>
+									<a href="">Gift Cards</a>
+								</li>
+								<li>
+									<a href="">Shoes</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Terms of Use</a>
+								</li>
+								<li>
+									<a href="">Privecy Policy</a>
+								</li>
+								<li>
+									<a href="">Refund Policy</a>
+								</li>
+								<li>
+									<a href="">Billing System</a>
+								</li>
+								<li>
+									<a href="">Ticket System</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li>
+									<a href="">Company Information</a>
+								</li>
+								<li>
+									<a href="">Careers</a>
+								</li>
+								<li>
+									<a href="">Store Location</a>
+								</li>
+								<li>
+									<a href="">Affillate Program</a>
+								</li>
+								<li>
+									<a href="">Copyright</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default">
+									<i class="fa fa-arrow-circle-o-right"></i>
+								</button>
+								<p>Get the most recent updates from
+									<br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by
+						<span>
+							<a target="_blank" href="http://www.themeum.com">Themeum</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!--/Footer-->
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="container">
+
+				<div class="wrapper">
+					<div class="company-info">
+						<h3>Acme Web Design</h3>
+						<ul>
+							<li>
+								<i class="fa fa-road"></i> 44 Something st</li>
+							<li>
+								<i class="fa fa-phone"></i> (555) 555-5555</li>
+							<li>
+								<i class="fa fa-envelope"></i> test@acme.test</li>
+						</ul>
+					</div>
+					<div class="contact">
+						<h3>Email Us</h3>
+						<div class="alert">Your message has been sent</div>
+						<form id="contactForm">
+							<p>
+								<label>Name</label>
+								<input type="text" name="name" id="name" required>
+							</p>
+							<p>
+								<label>Password</label>
+								<input type="password" name="password" id="password">
+							</p>
+							<p>
+								<label>Email Address</label>
+								<input type="email" name="email" id="email" required>
+							</p>
+							<p>
+								<label>Phone Number</label>
+								<input type="text" name="phone" id="phone">
+							</p>
+							<p class="full">
+								<button type="submit">Submit</button>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src=assets/js/pagination.js></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.scrollUp.min.js"></script>
+	<script src="assets/js/price-range.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+
+		var filebutton = document.getElementById("filebutton");
+		filebutton.addEventListener("change", function (e) {
+			var file = e.target.files[0];
+			var storageref = firebase.storage().ref('picturesofdresses/' + file.name);
+			var task = storageref.put(file);
+			task.on("state_changed", function (snapshot) {
+				var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+				alert(parseInt(percentage));
+				if (percentage == 100) {
+					storageref.getDownloadURL().then(function (url) {
+						alert(url);
+						alert("Your Image is Uploaded for a Rent!");
+
+
+					}
+					);
+				}
+			});
+		}
+		);
+		var p = "https://firebasestorage.googleapis.com/v0/b/e-shopping-1995e.appspot.com/o/picturesofdresses%2Fthree.png?alt=media&token=052b2d8b-3542-4ca0-a520-5e2f36158a6f";
+
+	</script>
+</body>
+
+</html>
