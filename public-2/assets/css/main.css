@@ -129,11 +129,7 @@ ul{
   background:#fff;
   padding:20px;
 }
-.login-form{
-  background:rgba(255,255,255,0.8);
-padding:20px;
-border-top:3px solid#3e4043;
-}
+
 .innter-form{
 padding-top:20px;
 }
@@ -796,7 +792,7 @@ ul.sub-menu {
   border-radius: 0;
   margin-left: -5px;
   margin-top: -3px;
-  padding: 7px 17px;
+  padding: 8px 17px;
 }
 
 .searchform button i {
@@ -1753,15 +1749,6 @@ h2.title {
   margin-top: 23px;
 }
 
-.login-form form button, .signup-form form button {
-  background: #FE980F;
-  border: medium none;
-  border-radius: 0;
-  color: #FFFFFF;
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  padding: 6px 25px;
-}
 
 .login-form label{
 

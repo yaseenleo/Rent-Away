@@ -18,6 +18,8 @@
 	<link href="assets/css/animate.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="assets/css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/form-elements.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="shortcut icon" href="assets/images/ico/favicon.ico">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
@@ -141,85 +143,119 @@
 		<!--/header-bottom-->
 	</header>
 	<!--/header-->
+	<section class="form">
 
-	<div class="container">
-		<h1 style="text-align: center;">Login/SignUp</h1>
-	</div>
-	<br>
-	<br>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="form-body">
-					<ul class="nav nav-tabs final-login">
-						<li class="active">
-							<a data-toggle="tab" href="#sectionA">Sign In</a>
-						</li>
-						<li>
-							<a data-toggle="tab" href="#sectionB">SignUp</a>
-						</li>
-					</ul>
-					<div class="tab-content">
-						<div id="sectionA" class="tab-pane fade in active">
-							<div class="innter-form">
-								<form class="sa-innate-form" method="post" action="/signin">
-									<label>Email Address</label>
-									<input type="text" id="signin-email-text" name="email">
-									<label>Password</label>
-									<input type="password" id="signin-password-text" name="password">
-									<button type="submit">Sign In</button>
-									<a href="">Forgot Password?</a>
-								</form>
-							</div>
-							<div class="social-login">
-								<p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
-								<ul>
-									<li style="display: none">
-										<a href="/signin-with-fb">
-											<i class="fa fa-facebook"></i> Facebook</a>
-									</li>
-									<li>
-										<a href="/auth/google">
-											<i class="fa fa-google-plus"></i> Google+</a>
-									</li>
-								</ul>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div id="sectionB" class="tab-pane fade">
-							<div class="innter-form">
-								<form class="sa-innate-form" method="post" action="signup">
-									<label>Email Address</label>
-									<input type="text" id="signin-email-text" name="email">
-									<label>Password</label>
-									<input type="password" id="signin-password-text" name="password">
-
-									<button type="submit">Join now</button>
-									<p>By clicking Join now, you agree to hifriends's User Agreement, Privacy Policy, and Cookie Policy.</p>
-								</form>
-							</div>
-							<div class="social-login">
-								<p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
-								<ul>
-									<li>
-										<a href="">
-											<i class="fa fa-facebook"></i> Facebook</a>
-									</li>
-									<li>
-										<a href="">
-											<i class="fa fa-google-plus"></i> Google+</a>
-									</li>
-								</ul>
+		<!-- Top content -->
+        <div class="top-content">
+        	<div class="container">
+                	
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>Rent Away Login &amp; Register Forms</h1>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 show-forms">
+                    	<span class="show-register-form active">Register</span> 
+                    	<span class="show-forms-divider">/</span> 
+                    	<span class="show-login-form">Login</span>
+                    </div>
+                </div>
+                
+                <div class="row login-form">
+                    <div class="col-sm-4 col-sm-offset-1">
+						<form role="form" action="/signin" method="post" class="l-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="">Username</label>
+	                        	<input type="email" name="email" placeholder="Email Address..." class="l-form-username form-control" id="l-form-username">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="l-form-password">Password</label>
+	                        	<input type="password" name="password" placeholder="Password..." class="l-form-password form-control" id="l-form-password">
+	                        </div>
+				            <button type="submit" class="btn">Sign in!</button>
+				    	</form>
+				    	<div class="social-login">
+                        	<p>Or login with:</p>
+                        	<div class="social-login-buttons">
+	                        	<a class="btn btn-link-1" href="/signin-with-fb"><i class="fa fa-facebook"></i></a>
+	                        	<a class="btn btn-link-1" href="#"><i class="fa fa-twitter"></i></a>
+	                        	<a class="btn btn-link-1" href="/auth/google"><i class="fa fa-google-plus"></i></a>
+                        	</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 forms-right-icons">
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-user"></i></div>
+							<div class="col-sm-10">
+								<h3>Latest Designer Cloths</h3>
 							</div>
 						</div>
-					</div>
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-eye"></i></div>
+							<div class="col-sm-10">
+								<h3>Easy To Use</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-twitter"></i></div>
+							<div class="col-sm-10">
+								<h3>Social Integrated</h3>
+							</div>
+						</div>
+                    </div>
 				</div>
-			</div>
+				
+				<div class="row register-form">
+                    <div class="col-sm-4 col-sm-offset-1">
+						<form role="form" action="/signup" method="post" class="r-form">
+	                    	<div class="form-group">
+	                    		<label class="sr-only" for="r-form-first-name">First name</label>
+	                        	<input type="text" name="first-name" placeholder="First name..." class="r-form-first-name form-control" id="r-form-first-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="r-form-last-name">Last name</label>
+	                        	<input type="text" name="last-name" placeholder="Last name..." class="r-form-last-name form-control" id="r-form-last-name">
+	                        </div>
+	                        <div class="form-group">
+	                        	<label class="sr-only" for="r-form-email">Email</label>
+	                        	<input type="email" name="email" placeholder="Email..." class="r-form-email form-control" id="r-form-email">
+							</div>
+							<div class="form-group">
+	                        	<label class="sr-only" for="r-form-password">Password</label>
+	                        	<input type="password" name="password" placeholder="Password..." class="r-form-email form-control" id="r-form-email">
+	                        </div>
+				            <button type="submit" class="btn">Sign me up!</button>
+						</form>
+                    </div>
+                    <div class="col-sm-6 forms-right-icons">
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-pencil"></i></div>
+							<div class="col-sm-10">
+								<h3>Beautiful Outfits</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-commenting"></i></div>
+							<div class="col-sm-10">
+								<h3>Login flexibility</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2 icon"><i class="fa fa-magic"></i></div>
+							<div class="col-sm-10">
+								<h3>Great product information</h3>
+							</div>
+						</div>
+                    </div>
+                </div>
+                    
+        	</div>
 		</div>
-	</div>
-	<br>
-	<br>
-	<br>
+		
+	</section>
 	<footer id="footer">
 		<!--Footer-->
 		<div class="footer-top">
@@ -332,7 +368,7 @@
 							<h2>About Shopper</h2>
 							<form action="#" class="searchform">
 								<input type="text" placeholder="Your email address" />
-								<button type="submit" class="btn btn-default">
+								<button type="submit" class="">
 									<i class="fa fa-arrow-circle-o-right"></i>
 								</button>
 								<p>Get the most recent updates from
@@ -419,7 +455,7 @@
 	</div>
 	<div id="user_div">
 
-
+		<!-- <script src="assets/css/fontawesome-all.js"></script> -->
 		<script src="assets/js/app.js"></script>
 		<script src=assets/js/pagination.js></script>
 		<script src="assets/js/jquery.js"></script>
@@ -428,6 +464,8 @@
 		<script src="assets/js/price-range.js"></script>
 		<script src="assets/js/jquery.prettyPhoto.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.backstretch.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
 
 
 </body>
